@@ -1,0 +1,426 @@
+body {
+    font: small 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+
+/* Begin wrap div */
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+}
+/* End wrap div */
+
+/* Begin standard styling */
+.standard_section {
+    padding: 10px;
+    margin: 10px;
+    background: #EBF4FB;
+    border:2px solid #B7DDF2;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.white_bg {
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* End standard section styling */
+
+
+/* Begin header section styling */
+div#buttonOptions {
+    display: block;
+    float: right;
+    margin-top: -35px;
+}
+
+div#buttonOptions form {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+section#header input[type=search] {
+    height: 34px;
+    width:400px;
+    margin: 0px;
+}
+
+section#header a.login {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FAA51A;
+    text-decoration:none;
+    float: right;
+    margin-top: -110px;
+    margin-right: 5px;
+}
+
+section#header a.login:hover, section#header a.login:active {
+    text-decoration: underline;
+}
+
+section#header p.login {
+    font-size: 16px;
+    color: #000000;
+    text-decoration:none;
+    float: right;
+    margin-top: -110px;
+    margin-right: 5px;
+}
+
+section#header p a.logout {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FAA51A;
+    text-decoration:none;
+}
+
+section#header p a.user_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6600CC;
+    text-decoration:none;
+}
+
+section#header p a.user_name:hover, section#header p a.user_name:active {
+    text-decoration: underline;
+}
+
+a.artist_name:hover, a.artist_name:active {
+    text-decoration: underline;
+}
+
+section#header p a.logout:hover, section#header p a.logout:active {
+    text-decoration: underline;
+}
+
+section#header a.home {
+    color: #FAA51A;
+    text-decoration:none;
+}
+
+section#header a.home:hover, section#header a.home:active {
+    text-decoration: underline;
+}
+
+section#header h1 {
+    font-size: 400%;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    margin-left: 25px;
+}
+/* End header section styling */
+
+
+
+/* Begin content div styling */
+div#content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+
+/* Being menu nav styling */
+    nav#menu {
+        width: 220px;
+        margin: 0px 5px 0px 10px;
+    }
+/* End user_input nav styling */
+
+/* Begin output section styling */
+section#output {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 0px 10px 0px 5px;
+}
+/* End output section styling */
+
+img.album_cover {
+    float: left;
+}
+
+article.basic_info {
+    float: left;
+    margin-left: 20px;
+}
+
+article.tracks {
+    float: left;
+    clear: both;
+    margin-top: 20px;
+}
+
+article.reviews {
+    float: left;
+    clear: both;
+    margin-top: 20px;
+}
+/* End content div styling */
+
+/* Begin Button Styling */
+.wide_button {
+    width: 100%;
+    line-height: 50px;
+}
+
+input[type=submit], button[type=submit] {
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 2em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    color: #FEF4E9;
+    border: solid 1px #DA7C0C;
+    background: #F78D1D;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FAA51A), to(#F47A20));
+    background: -moz-linear-gradient(top,  #FAA51A,  #F47A20);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAA51A', endColorstr='#F47A20');
+}
+
+input[type=submit]:hover, button[type=submit]:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFC125), to(#F47A20));
+    background: -moz-linear-gradient(top,  #FFC125,  #F47A20);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFC125', endColorstr='#F47A20');
+}
+
+input[type=submit]:active, button[type=submit]:active {
+    color: #FCD3A5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F47A20), to(#faa51a));
+    background: -moz-linear-gradient(top,  #F47A20,  #FAA51A);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F47A20', endColorstr='#FAA51A');
+}
+
+button[type=submit] h3 {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+
+}
+
+form#to_cart {
+    display: block;
+    float: right;
+    width: 200px;
+}
+/* End Button Styling */
+
+/* Begin Table Styling */
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #EBF4FB;
+}
+
+table.thumbnails {
+    border-spacing: 8px;
+}
+
+table.wide {
+    border-collapse: separate;
+    width: 100%;
+    background: none;
+}
+
+table.wide td {
+    text-align: center;
+}
+
+table.wide td.totals {
+    text-align: right;
+    height: 25px;
+}
+
+table.wide td.contents {
+    border: 1px solid #C8C8C8;
+    background: #FFFFFF;
+}
+
+table.tracks {
+    border-collapse: collapse;
+}
+
+table thead td {
+    font-weight: bold;
+}
+
+table.tracks td {
+    border: 1px solid #C8C8C8;
+    padding: 2px 10px;
+    background: #FFFFFF;
+}
+
+table.thumbnails td {
+    width: 154px;
+    vertical-align: top;
+    border: 1px solid #C8C8C8;
+    padding: 2px 10px;
+    background: #FFFFFF;
+}
+
+table.thumbnails a {
+    float: left;
+    clear: both;
+}
+/* End Table Styling */
+
+/* Begin Form Styling */
+legend {
+    font-size: 14px;
+    color: #6600CC;
+}
+
+label.textInput {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: right;
+    width: 200px;
+}
+
+input.textInput {
+    vertical-align: middle;
+    position: relative;
+    width: 200px;
+    padding: 4px 2px;
+}
+
+input.textInputSmall {
+    vertical-align: middle;
+    position: relative;
+    width: 94px;
+    padding: 4px 2px;
+}
+
+label.radio {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: left;
+}
+
+input.radio {
+    vertical-align: middle;
+    position: relative;
+}
+
+input[type=checkbox].checkbox {
+    vertical-align: middle;
+}
+
+label.checkbox {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: left;
+    width: 200px;
+}
+
+div.buttonSubmitOptions {
+    display: block;
+    float: right;
+}
+
+div.buttonSubmitOptions form {
+    display: inline-block;
+    position: relative;
+}
+/* End Form Styling */
+
+/* Begin Link Styling */
+a.album_name {
+    font-size: 16px;
+    color: #FAA51A;
+    text-decoration:none;
+}
+
+a.album_name:hover, a.album_name:active {
+    text-decoration: underline;
+}
+
+a.artist_name {
+    font-size: 12px;
+    color: #6600CC;
+    text-decoration:none;
+}
+
+a.artist_name:hover, a.artist_name:active {
+    text-decoration: underline;
+}
+
+a.genre_name {
+    font-size: 20px;
+    color: #6600CC;
+    text-decoration: none;
+}
+
+a.genre_name:hover, a.genre_name:active {
+    text-decoration: underline;
+}
+/* End Link Styling */
+
+/* Begin Text Styling */
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: #FAA51A; 
+}
+
+p.receipt {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+span.access {
+    text-decoration: underline;
+}
+/* End Text Styling */	
+
+/* Begin List Styling */	
+ol {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 20px;
+}
+/* End List Styling */
+
+/* Begin Error Styling */
+.error {
+    color: #FF0000;
+}
+/* End Error Styling */

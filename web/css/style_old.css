@@ -1,0 +1,160 @@
+/* 
+    Document   : style
+    Created on : Sep 17, 2013, 2:22:14 PM
+    Author     : jsage8
+    Description:
+        Stylesheet for entire course
+*/
+
+body {
+    font:small 'Lucida Grande', Verdana, Arial, sans-serif;
+}
+
+div#wrap {
+    width: 1024px;
+    margin: 0px auto;
+    border: 5px solid #C0C0C0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #FFFDCA;
+}
+
+table#course_content {
+    border-collapse: collapse;
+    background: #FFFFFF;
+}
+
+table.receipt {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.receipt td, table.receipt th {
+    border-bottom: 1px solid #C0C0C0;
+}
+
+table#course_content td {
+    border: 1px solid #000000;
+}
+
+table#course_content th {
+    border: 1px solid #000000;
+}
+
+table#course_content th:first-child {
+    width: 100px;
+}
+
+table#course_content td:first-child {
+    width: 100px;
+}
+
+form {
+    display: block;
+}
+
+fieldset {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label.textInput {
+    display: block;
+    float: left;
+    clear: left;
+    font-size: 16px;
+    text-align: right;
+    width: 50px;
+    padding: 0px;
+    margin-top: 6px;
+}
+
+input.textInput {
+    float: left;
+    padding: 4px 2px;
+    width: 200px;
+    margin: 2px 0px 10px 10px;
+}
+
+select {
+    font-size: 16px;
+}
+
+label.radio {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+input.radio {
+    margin-right: 5px;
+}
+
+label.checkbox {
+    display: block;
+    font-size: 16px;
+    text-align: right;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+input.checkbox {
+    clear: left;
+    float: left;
+    padding: 4px 2px;
+    margin: 2px 5px 10px 10px;
+}
+
+input.button {
+    font-size: 16px;
+}
+
+span.access {
+    text-decoration: underline;
+}
+
+hr {
+    /*color: #C0C0C0;*/
+    border: 1px solid #C0C0C0;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.error {
+    color: #FF0000;
+}
+
+a {
+    text-decoration: none;
+    color: #0067AC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0067AC;
+}
+
+a:active {
+    text-decoration: underline;
+    color: #0067AC;
+}
+
+a:visited {
+    color: #0067AC;
+}

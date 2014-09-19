@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <!--jsage8 project Servlets-->   
+    <servlet>
+        <servlet-name>Week10_ProcessingServlet</servlet-name>
+        <servlet-class>jsage8.Week10_ProcessingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Week10_ProcessingServlet</servlet-name>
+        <url-pattern>/mod10assignment/Week10_Processing</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Week12_ProcessingServlet</servlet-name>
+        <servlet-class>jsage8.Week12_ProcessingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Week12_ProcessingServlet</servlet-name>
+        <url-pattern>/mod12assignment/Week12_Processing</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Week12_PrintServlet</servlet-name>
+        <servlet-class>jsage8.Week12_PrintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Week12_PrintServlet</servlet-name>
+        <url-pattern>/mod12assignment/Week12_Print</url-pattern>
+    </servlet-mapping>
+    
+    <mime-mapping>  
+        <extension>xlsx</extension>  
+        <mime-type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</mime-type>  
+    </mime-mapping>
+    
+    <!--tunebazaar project Servlets-->
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>tunebazaar.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>
+        <servlet-name>SearchDisplayServlet</servlet-name>
+        <servlet-class>tunebazaar.SearchDisplayServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchDisplayServlet</servlet-name>
+        <url-pattern>/SearchDisplayServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DisplayProductServlet</servlet-name>
+        <servlet-class>tunebazaar.DisplayProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayProductServlet</servlet-name>
+        <url-pattern>/DisplayProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShoppingCartServlet</servlet-name>
+        <servlet-class>tunebazaar.ShoppingCartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShoppingCartServlet</servlet-name>
+        <url-pattern>/ShoppingCartServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UserAccountServlet</servlet-name>
+        <servlet-class>tunebazaar.UserAccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserAccountServlet</servlet-name>
+        <url-pattern>/UserAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--jsage8 project Security Contraints-->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>action</web-resource-name>
+            <description>Define the container secured resource</description>
+            <url-pattern>/mod10assignment/week10_checkout.jsp</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <description>User data constraints</description>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint> 
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>action</web-resource-name>
+            <description>Define the container secured resource</description>
+            <url-pattern>/mod12assignment/week12_checkout.jsp</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <description>User data constraints</description>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    
+    <!--tunebazaar project Security Contraints-->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>action</web-resource-name>
+            <description>Define the container secured resource</description>
+            <url-pattern>/login.jsp</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <description>User data constraints</description>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>action</web-resource-name>
+            <description>Define the container secured resource</description>
+            <url-pattern>/UserAccountServlet</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <description>User data constraints</description>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint> 
+
+    <!--ALL projects-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+   
+</web-app>
